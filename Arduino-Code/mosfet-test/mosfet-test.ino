@@ -2,9 +2,9 @@
 // in the #defines
 // public domain, enjoy!
 
+#define BLUEPIN 3//MEGA 3
 #define REDPIN 5//MEGA 5
 #define GREENPIN 6//MEGA 6
-#define BLUEPIN 3//MEGA 3
 
 #define trigPin 12//MEGA 13
 #define echoPin 11//MEGA 12
