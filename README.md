@@ -11,3 +11,23 @@
 new screw terminal:
 https://www.conrad.de/de/p/degson-dg350-3-5-03p-14-00ah-1-schraubklemmblock-2-mm-polzahl-num-3-gruen-1-st-1327185.html
 3pin 4x
+
+
+
+Terminal IO
+
+1. Blue LED Out
+2. Green LED Out
+3. Red LED Out
+
+4. Echo Sensor In
+5. Trigger Sensor Out
+6. Power LED Out
+
+7. Power In
+8. Ground IN
+9. Power Sensor Out (5v)
+
+10. Button In
+11. Ground Button Out
+12. Ground Sensor
