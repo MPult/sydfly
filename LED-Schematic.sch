@@ -958,6 +958,11 @@ Created by Upverter.com</description>
 <wire x1="-33.02" y1="20.32" x2="-25.4" y2="20.32" width="0.1524" layer="91"/>
 <label x="-33.02" y="20.32" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="X3" gate="-2" pin="KL"/>
+<wire x1="-33.02" y1="35.56" x2="-25.4" y2="35.56" width="0.1524" layer="91"/>
+<label x="-33.02" y="35.56" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="R-GATE" class="0">
 <segment>
@@ -1055,18 +1060,16 @@ Created by Upverter.com</description>
 <label x="-33.02" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GND-SENSE" class="0">
-<segment>
-<pinref part="X3" gate="-2" pin="KL"/>
-<wire x1="-33.02" y1="35.56" x2="-25.4" y2="35.56" width="0.1524" layer="91"/>
-<label x="-33.02" y="35.56" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="BTN-IN" class="0">
 <segment>
 <pinref part="X4" gate="-3" pin="KL"/>
 <wire x1="-33.02" y1="15.24" x2="-25.4" y2="15.24" width="0.1524" layer="91"/>
 <label x="-33.02" y="15.24" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ARDUINO_NANO1" gate="G$1" pin="D8/CLK0"/>
+<wire x1="53.34" y1="78.74" x2="45.72" y2="78.74" width="0.1524" layer="91"/>
+<label x="40.64" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">

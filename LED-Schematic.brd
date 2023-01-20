@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -199,6 +199,7 @@
 <wire x1="160" y1="0" x2="160" y2="100" width="0" layer="20"/>
 <wire x1="160" y1="100" x2="0" y2="100" width="0" layer="20"/>
 <wire x1="0" y1="100" x2="0" y2="0" width="0" layer="20"/>
+<text x="19.05" y="39.37" size="1.778" layer="1">BTN-IN</text>
 </plain>
 <libraries>
 <library name="ArduinoNanoV30">
@@ -380,60 +381,52 @@ Created by Upverter.com</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="default">
-<description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
-&lt;p&gt;
-Die Standard-Design-Rules sind so gewählt, dass sie für 
-die meisten Anwendungen passen. Sollte ihre Platine 
-besondere Anforderungen haben, treffen Sie die erforderlichen
-Einstellungen hier und speichern die Design Rules unter 
-einem neuen Namen ab.</description>
-<description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
-&lt;p&gt;
-The default Design Rules have been set to cover
-a wide range of applications. Your particular design
-may have different requirements, so please make the
-necessary adjustments and save your customized
-design rules under a new name.</description>
+<designrules name="jlcpcb-2layers">
+<description language="en">&lt;b&gt;JLCPCB design rules (2 layers)&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;Board thickness: 1.6mm&lt;/li&gt;
+&lt;li&gt;Copper weight: 1oz (35um)&lt;/li&gt;
+&lt;li&gt;Note: annular ring aren't minimal&lt;/li&gt;
+&lt;/ul&gt;</description>
 <param name="layerSetup" value="(1*16)"/>
 <param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
-<param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
-<param name="mdWireWire" value="6mil"/>
-<param name="mdWirePad" value="6mil"/>
-<param name="mdWireVia" value="6mil"/>
-<param name="mdPadPad" value="6mil"/>
-<param name="mdPadVia" value="6mil"/>
-<param name="mdViaVia" value="6mil"/>
-<param name="mdSmdPad" value="6mil"/>
-<param name="mdSmdVia" value="6mil"/>
-<param name="mdSmdSmd" value="6mil"/>
+<param name="mtIsolate" value="1.6mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
+<param name="mdWireWire" value="5mil"/>
+<param name="mdWirePad" value="5mil"/>
+<param name="mdWireVia" value="5mil"/>
+<param name="mdPadPad" value="5mil"/>
+<param name="mdPadVia" value="5mil"/>
+<param name="mdViaVia" value="5mil"/>
+<param name="mdSmdPad" value="5mil"/>
+<param name="mdSmdVia" value="5mil"/>
+<param name="mdSmdSmd" value="5mil"/>
 <param name="mdViaViaSameLayer" value="6mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="40mil"/>
+<param name="mdCopperDimension" value="0.2mm"/>
 <param name="mdDrill" value="6mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="6mil"/>
-<param name="msDrill" value="0.35mm"/>
-<param name="msMicroVia" value="9.99mm"/>
+<param name="msWidth" value="5mil"/>
+<param name="msDrill" value="0.3mm"/>
+<param name="msMicroVia" value="0.3mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
-<param name="rvPadTop" value="0.25"/>
-<param name="rvPadInner" value="0.25"/>
-<param name="rvPadBottom" value="0.25"/>
-<param name="rvViaOuter" value="0.25"/>
-<param name="rvViaInner" value="0.25"/>
-<param name="rvMicroViaOuter" value="0.25"/>
-<param name="rvMicroViaInner" value="0.25"/>
+<param name="rvPadTop" value="0.4"/>
+<param name="rvPadInner" value="0"/>
+<param name="rvPadBottom" value="0.4"/>
+<param name="rvViaOuter" value="0"/>
+<param name="rvViaInner" value="0"/>
+<param name="rvMicroViaOuter" value="0"/>
+<param name="rvMicroViaInner" value="0"/>
 <param name="rlMinPadTop" value="10mil"/>
-<param name="rlMaxPadTop" value="20mil"/>
+<param name="rlMaxPadTop" value="80mil"/>
 <param name="rlMinPadInner" value="10mil"/>
 <param name="rlMaxPadInner" value="20mil"/>
 <param name="rlMinPadBottom" value="10mil"/>
-<param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="8mil"/>
+<param name="rlMaxPadBottom" value="80mil"/>
+<param name="rlMinViaOuter" value="3mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
 <param name="rlMinViaInner" value="8mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
-<param name="rlMinMicroViaOuter" value="4mil"/>
+<param name="rlMinMicroViaOuter" value="3mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
 <param name="rlMinMicroViaInner" value="4mil"/>
 <param name="rlMaxMicroViaInner" value="20mil"/>
@@ -565,7 +558,6 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="ARDUINO_NANO1" library="ArduinoNanoV30" package="ARDUINO_NANO" value="" x="44.45" y="59.69" smashed="yes">
-<attribute name="NAME" x="26.67" y="59.69" size="1.27" layer="21" font="vector"/>
 <attribute name="VALUE" x="26.67" y="57.15" size="1.27" layer="21" font="vector"/>
 </element>
 <element name="Q1" library="Infineon - IRLB8721PbF" package="INFINEON_IRLB8721PBF_0" value="INFINEON_IRLB8721PBFINFINEON_IRLB8721PBF_0_0" x="41.91" y="92.71" smashed="yes">
@@ -580,7 +572,6 @@ design rules under a new name.</description>
 <attribute name="MOUNTING_TYPE" value="through hole" x="41.91" y="92.71" size="1.778" layer="27" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="942-IRLB8721PBF" x="41.91" y="92.71" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="IRLB8721PbF" x="41.91" y="92.71" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="44.79" y="97.707" size="1" layer="25" rot="R270"/>
 <attribute name="NUM_PINS" value="3" x="41.91" y="92.71" size="1.778" layer="27" display="off"/>
 <attribute name="PACKAGE" value="TO220AB-3" x="41.91" y="92.71" size="1.778" layer="27" display="off"/>
 <attribute name="PREFIX" value="Q" x="41.91" y="92.71" size="1.778" layer="27" display="off"/>
@@ -602,7 +593,6 @@ design rules under a new name.</description>
 <attribute name="MOUNTING_TYPE" value="through hole" x="24.13" y="92.71" size="1.778" layer="27" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="942-IRLB8721PBF" x="24.13" y="92.71" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="IRLB8721PbF" x="24.13" y="92.71" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="27.01" y="97.707" size="1" layer="25" rot="R270"/>
 <attribute name="NUM_PINS" value="3" x="24.13" y="92.71" size="1.778" layer="27" display="off"/>
 <attribute name="PACKAGE" value="TO220AB-3" x="24.13" y="92.71" size="1.778" layer="27" display="off"/>
 <attribute name="PREFIX" value="Q" x="24.13" y="92.71" size="1.778" layer="27" display="off"/>
@@ -624,7 +614,6 @@ design rules under a new name.</description>
 <attribute name="MOUNTING_TYPE" value="through hole" x="59.69" y="92.71" size="1.778" layer="27" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="942-IRLB8721PBF" x="59.69" y="92.71" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="IRLB8721PbF" x="59.69" y="92.71" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="62.57" y="97.707" size="1" layer="25" rot="R270"/>
 <attribute name="NUM_PINS" value="3" x="59.69" y="92.71" size="1.778" layer="27" display="off"/>
 <attribute name="PACKAGE" value="TO220AB-3" x="59.69" y="92.71" size="1.778" layer="27" display="off"/>
 <attribute name="PREFIX" value="Q" x="59.69" y="92.71" size="1.778" layer="27" display="off"/>
@@ -634,40 +623,30 @@ design rules under a new name.</description>
 <attribute name="TEMPERATURE_RANGE_LOW" value="-55°C" x="59.69" y="92.71" size="1.778" layer="27" display="off"/>
 <attribute name="TYPE" value="transistor" x="59.69" y="92.71" size="1.778" layer="27" display="off"/>
 </element>
-<element name="X1" library="degson" package="DG350-3.5-03P" value="DG3XX-03-3.5" x="5.08" y="93.98" smashed="yes" rot="R90">
-<attribute name="NAME" x="1.27" y="90.17" size="1.016" layer="25" ratio="18" rot="R90"/>
-<attribute name="VALUE" x="8.89" y="88.265" size="1.016" layer="27" ratio="18" rot="R180"/>
-</element>
-<element name="X2" library="degson" package="DG350-3.5-03P" value="DG3XX-03-3.5" x="5.08" y="80.01" smashed="yes" rot="R90">
-<attribute name="NAME" x="1.27" y="76.2" size="1.016" layer="25" ratio="18" rot="R90"/>
-<attribute name="VALUE" x="8.89" y="74.295" size="1.016" layer="27" ratio="18" rot="R180"/>
-</element>
-<element name="X3" library="degson" package="DG350-3.5-03P" value="DG3XX-03-3.5" x="5.08" y="66.04" smashed="yes" rot="R90">
-<attribute name="NAME" x="1.27" y="62.23" size="1.016" layer="25" ratio="18" rot="R90"/>
-<attribute name="VALUE" x="8.89" y="60.325" size="1.016" layer="27" ratio="18" rot="R180"/>
-</element>
-<element name="X4" library="degson" package="DG350-3.5-03P" value="DG3XX-03-3.5" x="5.08" y="52.07" smashed="yes" rot="R90">
-<attribute name="NAME" x="1.27" y="48.26" size="1.016" layer="25" ratio="18" rot="R90"/>
-<attribute name="VALUE" x="8.89" y="46.355" size="1.016" layer="27" ratio="18" rot="R180"/>
-</element>
+<element name="X1" library="degson" package="DG350-3.5-03P" value="DG3XX-03-3.5" x="7.62" y="92.71" smashed="yes" rot="R90"/>
+<element name="X2" library="degson" package="DG350-3.5-03P" value="DG3XX-03-3.5" x="7.62" y="78.74" smashed="yes" rot="R90"/>
+<element name="X3" library="degson" package="DG350-3.5-03P" value="DG3XX-03-3.5" x="7.62" y="49.53" smashed="yes" rot="R90"/>
+<element name="X4" library="degson" package="DG350-3.5-03P" value="DG3XX-03-3.5" x="7.62" y="35.56" smashed="yes" rot="R90"/>
 </elements>
 <signals>
 <signal name="P-LED">
 <contactref element="ARDUINO_NANO1" pad="15"/>
 <contactref element="X2" pad="1"/>
 <contactref element="X3" pad="3"/>
-<wire x1="5.08" y1="76.51" x2="5.08" y2="69.54" width="0.1524" layer="16"/>
-<wire x1="5.08" y1="69.54" x2="11.74" y2="69.54" width="0.1524" layer="16"/>
-<wire x1="25.4" y1="55.88" x2="57.15" y2="55.88" width="0.1524" layer="16"/>
-<wire x1="57.15" y1="55.88" x2="59.69" y2="53.34" width="0.1524" layer="16"/>
+<wire x1="7.62" y1="75.24" x2="7.775" y2="75.085" width="0.1524" layer="16"/>
+<wire x1="7.62" y1="55.88" x2="7.62" y2="53.03" width="0.1524" layer="16"/>
+<wire x1="59.69" y1="53.34" x2="57.15" y2="55.88" width="0.1524" layer="16"/>
 <wire x1="59.69" y1="53.34" x2="59.69" y2="52.07" width="0.1524" layer="16"/>
-<wire x1="11.74" y1="69.54" x2="25.4" y2="55.88" width="0.1524" layer="16"/>
+<wire x1="57.15" y1="55.88" x2="10.16" y2="55.88" width="0.1524" layer="16"/>
+<wire x1="10.16" y1="55.88" x2="7.62" y2="55.88" width="0.1524" layer="16"/>
+<wire x1="7.62" y1="53.03" x2="7.62" y2="74.93" width="0.1524" layer="16"/>
+<wire x1="7.62" y1="74.93" x2="7.775" y2="75.085" width="0.1524" layer="16"/>
 </signal>
 <signal name="R-LED">
 <contactref element="Q1" pad="2"/>
 <contactref element="X1" pad="1"/>
-<wire x1="5.08" y1="90.48" x2="22.2891375" y2="90.48" width="0.1524" layer="16"/>
-<wire x1="22.2891375" y1="90.48" x2="23.2327375" y2="91.4236" width="0.1524" layer="16"/>
+<wire x1="7.62" y1="89.21" x2="21.0191375" y2="89.21" width="0.1524" layer="16"/>
+<wire x1="21.0191375" y1="89.21" x2="23.2327375" y2="91.4236" width="0.1524" layer="16"/>
 <wire x1="40.2456" y1="91.4236" x2="41.532" y2="92.71" width="0.1524" layer="16"/>
 <wire x1="23.2327375" y1="91.4236" x2="40.2456" y2="91.4236" width="0.1524" layer="16"/>
 </signal>
@@ -696,17 +675,15 @@ design rules under a new name.</description>
 <signal name="G-LED">
 <contactref element="Q2" pad="2"/>
 <contactref element="X1" pad="2"/>
-<wire x1="5.08" y1="93.98" x2="15.24" y2="93.98" width="0.1524" layer="1"/>
-<wire x1="15.24" y1="93.98" x2="16.51" y2="92.71" width="0.1524" layer="1"/>
-<wire x1="16.51" y1="92.71" x2="23.752" y2="92.71" width="0.1524" layer="1"/>
+<wire x1="7.62" y1="92.71" x2="23.752" y2="92.71" width="0.1524" layer="1"/>
 </signal>
 <signal name="B-LED">
 <contactref element="Q3" pad="2"/>
 <contactref element="X1" pad="3"/>
 <wire x1="59.312" y1="92.71" x2="53.1142" y2="98.9078" width="0.1524" layer="16"/>
-<wire x1="6.1978" y1="98.9078" x2="5.08" y2="97.79" width="0.1524" layer="16"/>
-<wire x1="53.1142" y1="98.9078" x2="6.1978" y2="98.9078" width="0.1524" layer="16"/>
-<wire x1="5.08" y1="97.79" x2="5.08" y2="97.48" width="0" layer="19" extent="16-16"/>
+<wire x1="53.1142" y1="98.9078" x2="11.43" y2="98.9078" width="0.1524" layer="16"/>
+<wire x1="7.62" y1="96.21" x2="10.3178" y2="98.9078" width="0.1524" layer="16"/>
+<wire x1="10.3178" y1="98.9078" x2="11.43" y2="98.9078" width="0.1524" layer="16"/>
 </signal>
 <signal name="GND">
 <contactref element="ARDUINO_NANO1" pad="19"/>
@@ -723,12 +700,16 @@ design rules under a new name.</description>
 <wire x1="35.182" y1="78.74" x2="52.07" y2="78.74" width="0.1524" layer="16"/>
 <wire x1="59.312" y1="90.17" x2="59.312" y2="85.982" width="0.1524" layer="16"/>
 <wire x1="59.312" y1="85.982" x2="52.07" y2="78.74" width="0.1524" layer="16"/>
-<wire x1="5.08" y1="52.07" x2="12.7" y2="52.07" width="0.1524" layer="1"/>
-<wire x1="12.7" y1="52.07" x2="16.2" y2="48.57" width="0.1524" layer="1"/>
-<wire x1="16.2" y1="48.57" x2="17.78" y2="46.99" width="0.1524" layer="1"/>
-<wire x1="5.08" y1="48.57" x2="16.2" y2="48.57" width="0.1524" layer="1"/>
-<wire x1="17.78" y1="46.99" x2="52.07" y2="46.99" width="0.1524" layer="1"/>
 <wire x1="52.07" y1="46.99" x2="57.15" y2="52.07" width="0.1524" layer="1"/>
+<contactref element="X3" pad="2"/>
+<wire x1="7.62" y1="35.56" x2="19.05" y2="46.99" width="0.1524" layer="1"/>
+<wire x1="19.05" y1="46.99" x2="52.07" y2="46.99" width="0.1524" layer="1"/>
+<wire x1="7.62" y1="32.06" x2="19.05" y2="43.49" width="0.1524" layer="1"/>
+<wire x1="19.05" y1="43.49" x2="19.05" y2="46.99" width="0.1524" layer="1"/>
+<wire x1="1.27" y1="33.02" x2="1.27" y2="43.18" width="0.1524" layer="1"/>
+<wire x1="1.27" y1="43.18" x2="7.62" y2="49.53" width="0.1524" layer="1"/>
+<wire x1="7.62" y1="32.06" x2="2.23" y2="32.06" width="0.1524" layer="1"/>
+<wire x1="2.23" y1="32.06" x2="1.27" y2="33.02" width="0.1524" layer="1"/>
 <wire x1="57.15" y1="52.07" x2="52.07" y2="67.31" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TRIG-SENSE">
@@ -736,36 +717,41 @@ design rules under a new name.</description>
 <contactref element="X2" pad="2"/>
 <wire x1="24.13" y1="67.31" x2="23.5712" y2="67.8688" width="0.1524" layer="16"/>
 <wire x1="23.5712" y1="67.8688" x2="23.5712" y2="68.13064375" width="0.1524" layer="16"/>
-<wire x1="23.5712" y1="68.13064375" x2="11.69184375" y2="80.01" width="0.1524" layer="16"/>
-<wire x1="11.69184375" y1="80.01" x2="5.08" y2="80.01" width="0.1524" layer="16"/>
+<wire x1="23.5712" y1="68.13064375" x2="12.96184375" y2="78.74" width="0.1524" layer="16"/>
+<wire x1="12.96184375" y1="78.74" x2="7.62" y2="78.74" width="0.1524" layer="16"/>
 </signal>
 <signal name="ECHO-SENSE">
 <contactref element="ARDUINO_NANO1" pad="29"/>
 <contactref element="X2" pad="3"/>
-<wire x1="26.67" y1="67.31" x2="10.47" y2="83.51" width="0.1524" layer="16"/>
-<wire x1="10.47" y1="83.51" x2="5.08" y2="83.51" width="0.1524" layer="16"/>
+<wire x1="26.67" y1="67.31" x2="11.74" y2="82.24" width="0.1524" layer="16"/>
+<wire x1="11.74" y1="82.24" x2="7.62" y2="82.24" width="0.1524" layer="16"/>
 </signal>
 <signal name="P-SENSE">
 <contactref element="ARDUINO_NANO1" pad="12"/>
 <contactref element="X3" pad="1"/>
-<wire x1="52.07" y1="52.07" x2="49.53" y2="49.53" width="0.1524" layer="1"/>
-<wire x1="18.09" y1="49.53" x2="5.08" y2="62.54" width="0.1524" layer="1"/>
-<wire x1="49.53" y1="49.53" x2="18.09" y2="49.53" width="0.1524" layer="1"/>
-</signal>
-<signal name="GND-SENSE">
-<contactref element="X3" pad="2"/>
+<wire x1="7.62" y1="46.03" x2="11.12" y2="49.53" width="0.1524" layer="16"/>
+<wire x1="11.12" y1="49.53" x2="49.53" y2="49.53" width="0.1524" layer="16"/>
+<wire x1="49.53" y1="49.53" x2="52.07" y2="52.07" width="0.1524" layer="16"/>
 </signal>
 <signal name="BTN-IN">
 <contactref element="X4" pad="3"/>
+<contactref element="ARDUINO_NANO1" pad="26"/>
+<wire x1="34.29" y1="67.31" x2="21.0312" y2="54.0512" width="0.1524" layer="1"/>
+<wire x1="21.0312" y1="54.0512" x2="20.76935625" y2="54.0512" width="0.1524" layer="1"/>
+<wire x1="20.76935625" y1="54.0512" x2="7.62" y2="40.90184375" width="0.1524" layer="1"/>
+<wire x1="7.62" y1="40.90184375" x2="7.62" y2="39.06" width="0.1524" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
 <mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
 <mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
-<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF000000"/>
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
+<errors>
+<approved hash="21,19,85827980797e7b82"/>
+</errors>
 </board>
 </drawing>
 <compatibility>
