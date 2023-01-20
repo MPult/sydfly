@@ -201,53 +201,6 @@
 <wire x1="0" y1="100" x2="0" y2="0" width="0" layer="20"/>
 </plain>
 <libraries>
-<library name="SparkFun-Connectors">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-In this library you'll find connectors and sockets- basically anything that can be plugged into or onto.&lt;br&gt;&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="POWER_JACK_PTH">
-<description>&lt;h3&gt;DC Barrel Power Jack/Connector PTH&lt;/h3&gt;
-5.5mm jack, 2.1mm center pole diameter
-&lt;p&gt;Specifications:
-&lt;ul&gt;&lt;li&gt;Pin count: 3&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=”https://www.sparkfun.com/datasheets/Prototyping/Barrel-Connector-PJ-202A.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;POWER_JACK&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<wire x1="4.5" y1="13.7" x2="2.4" y2="13.7" width="0.2032" layer="21"/>
-<wire x1="-4.5" y1="3" x2="-4.5" y2="0.1" width="0.2032" layer="51"/>
-<wire x1="4.5" y1="0.1" x2="4.5" y2="3" width="0.2032" layer="51"/>
-<wire x1="4.5" y1="0.1" x2="-4.5" y2="0.1" width="0.2032" layer="51"/>
-<wire x1="4.5" y1="3" x2="4.5" y2="8.3" width="0.2032" layer="21"/>
-<wire x1="4.5" y1="13.7" x2="4.5" y2="13" width="0.2032" layer="21"/>
-<wire x1="-4.5" y1="3" x2="-4.5" y2="13.7" width="0.2032" layer="21"/>
-<wire x1="-4.5" y1="13.7" x2="-2.4" y2="13.7" width="0.2032" layer="21"/>
-<wire x1="-4.5" y1="3" x2="4.5" y2="3" width="0.2032" layer="21"/>
-<pad name="PWR" x="0" y="13.7" drill="2.9972" diameter="4.318"/>
-<pad name="GND" x="0" y="7.7" drill="2.9972" diameter="4.318"/>
-<pad name="GNDBREAK" x="4.7" y="10.7" drill="2.9972" diameter="4.318" rot="R90"/>
-<text x="-1.3716" y="1.8288" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
-<text x="-1.7526" y="0.8128" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
-</package>
-<package name="1X02_2.54_SCREWTERM">
-<pad name="P2" x="0" y="0" drill="1.016" shape="square"/>
-<pad name="P1" x="2.54" y="0" drill="1.016" shape="square"/>
-<wire x1="-1.5" y1="3.25" x2="4" y2="3.25" width="0.2032" layer="21"/>
-<wire x1="4" y1="3.25" x2="4" y2="2.5" width="0.2032" layer="21"/>
-<wire x1="4" y1="2.5" x2="4" y2="-3.25" width="0.2032" layer="21"/>
-<wire x1="4" y1="-3.25" x2="-1.5" y2="-3.25" width="0.2032" layer="21"/>
-<wire x1="-1.5" y1="-3.25" x2="-1.5" y2="2.5" width="0.2032" layer="21"/>
-<wire x1="-1.5" y1="2.5" x2="-1.5" y2="3.25" width="0.2032" layer="21"/>
-<wire x1="-1.5" y1="2.5" x2="4" y2="2.5" width="0.2032" layer="21"/>
-</package>
-</packages>
-</library>
 <library name="ArduinoNanoV30">
 <packages>
 <package name="ARDUINO_NANO">
@@ -373,6 +326,48 @@ Created by Upverter.com</description>
 <pad name="1" x="-0.378" y="2.54" drill="1.35" diameter="2.05" shape="square"/>
 <pad name="2" x="-0.378" y="0" drill="1.35" diameter="2.05"/>
 <pad name="3" x="-0.378" y="-2.54" drill="1.35" diameter="2.05"/>
+</package>
+</packages>
+</library>
+<library name="degson">
+<description>&lt;p&gt;&lt;b&gt;&lt;a href="http://www.degson.net/pcb_screw/"&gt;DEGSON PCB screws&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;DG306-5.0&lt;/b&gt; series - 5.0mm pitch&lt;/li&gt;&lt;li&gt;&lt;b&gt;DG350-3.5&lt;/b&gt; series - 3.5mm pitch&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;Dec 2010 Ivan A-R (&lt;a href="http://tuxotronic.org"&gt;tuxotronic.org&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;License &lt;a href="http://creativecommons.org/licenses/by-sa/3.0/"&gt;CC Attribution-ShareAlike 3.0 Unported
+&lt;/a&gt;&lt;/p&gt;</description>
+<packages>
+<package name="DG350-3.5-03P">
+<wire x1="-5.25" y1="3.4" x2="5.25" y2="3.4" width="0.127" layer="21"/>
+<wire x1="5.25" y1="3.4" x2="5.25" y2="-3.4" width="0.127" layer="21"/>
+<wire x1="5.25" y1="-3.4" x2="-5.25" y2="-3.4" width="0.127" layer="21"/>
+<wire x1="-5.25" y1="-3.4" x2="-5.25" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-5.25" y1="-1.905" x2="-5.25" y2="-1.4288" width="0.127" layer="21"/>
+<wire x1="-5.25" y1="-1.4288" x2="-5.25" y2="3.4" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="-0.5" x2="0.5" y2="0.8" width="0.127" layer="51"/>
+<wire x1="-0.5" y1="-0.85" x2="0.85" y2="0.5" width="0.127" layer="51"/>
+<wire x1="-4.3" y1="-0.5" x2="-3" y2="0.8" width="0.127" layer="51"/>
+<wire x1="-4" y1="-0.85" x2="-2.65" y2="0.5" width="0.127" layer="51"/>
+<wire x1="-5.25" y1="2.25" x2="5.25" y2="2.25" width="0.127" layer="51"/>
+<wire x1="5.25" y1="-2.25" x2="-5.25" y2="-2.25" width="0.127" layer="51"/>
+<wire x1="-3.8138" y1="-4.1275" x2="-3.4963" y2="-3.6513" width="0.127" layer="21"/>
+<wire x1="-3.4963" y1="-3.6513" x2="-3.1788" y2="-4.1275" width="0.127" layer="21"/>
+<wire x1="-3.1788" y1="-4.1275" x2="-3.8138" y2="-4.1275" width="0.127" layer="21"/>
+<wire x1="-5.25" y1="-1.905" x2="-5.56" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-5.56" y1="-1.905" x2="-5.56" y2="-1.4288" width="0.127" layer="21"/>
+<wire x1="-5.56" y1="-1.4288" x2="-5.25" y2="-1.4288" width="0.127" layer="21"/>
+<wire x1="5.25" y1="1.905" x2="5.56" y2="1.905" width="0.127" layer="21"/>
+<wire x1="5.56" y1="1.905" x2="5.56" y2="1.4288" width="0.127" layer="21"/>
+<wire x1="5.56" y1="1.4288" x2="5.25" y2="1.4288" width="0.127" layer="21"/>
+<wire x1="2.7" y1="-0.5" x2="4" y2="0.8" width="0.127" layer="51"/>
+<wire x1="3" y1="-0.85" x2="4.35" y2="0.5" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="1" width="0.127" layer="51"/>
+<circle x="-3.5" y="0" radius="1" width="0.127" layer="51"/>
+<circle x="3.5" y="0" radius="1" width="0.127" layer="51"/>
+<pad name="1" x="-3.5" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="2" x="0" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="3" x="3.5" y="0" drill="1" shape="long" rot="R90"/>
+<text x="-3.81" y="3.81" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-5.715" y="-3.81" size="1.016" layer="27" ratio="18" rot="R90">&gt;VALUE</text>
 </package>
 </packages>
 </library>
@@ -569,157 +564,199 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="J1" library="SparkFun-Connectors" package="POWER_JACK_PTH" value="POWER_JACK" x="1.27" y="48.26" smashed="yes" rot="R270">
-<attribute name="NAME" x="6.35" y="52.07" size="0.4064" layer="25" rot="R270"/>
-<attribute name="PROD_ID" value="CONN-08197" x="-24.13" y="8.89" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="5.08" y="52.07" size="0.4064" layer="27" rot="R270"/>
-</element>
-<element name="J2" library="SparkFun-Connectors" package="1X02_2.54_SCREWTERM" value="" x="3.81" y="92.71" smashed="yes"/>
-<element name="J3" library="SparkFun-Connectors" package="1X02_2.54_SCREWTERM" value="" x="3.81" y="82.55" smashed="yes"/>
 <element name="ARDUINO_NANO1" library="ArduinoNanoV30" package="ARDUINO_NANO" value="" x="44.45" y="59.69" smashed="yes">
 <attribute name="NAME" x="26.67" y="59.69" size="1.27" layer="21" font="vector"/>
 <attribute name="VALUE" x="26.67" y="57.15" size="1.27" layer="21" font="vector"/>
 </element>
-<element name="J4" library="SparkFun-Connectors" package="1X02_2.54_SCREWTERM" value="" x="3.81" y="72.39" smashed="yes"/>
-<element name="J5" library="SparkFun-Connectors" package="1X02_2.54_SCREWTERM" value="" x="3.81" y="62.23" smashed="yes"/>
-<element name="Q1" library="Infineon - IRLB8721PbF" package="INFINEON_IRLB8721PBF_0" value="INFINEON_IRLB8721PBFINFINEON_IRLB8721PBF_0_0" x="58.42" y="91.44" smashed="yes">
-<attribute name="CENTROID_NOT_SPECIFIED" value="No" x="58.42" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET" value="https://upverter.com/datasheet/6023de1dc29e00ae136963535d37ebb95ee78d8c.pdf" x="58.42" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_DESCRIPTION" value="TRANS MOSFET N-CH 30V 62A TO-220AB" x="58.42" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="IRLB8721PBF-ND" x="58.42" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="IMPORTED_FROM" value="octopart" x="58.42" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="IPC_LAND_PATTERN_NAME" value="TO-220" x="58.42" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="LEAD_FREE" value="yes" x="58.42" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="Infineon" x="58.42" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="MOUNTING_TYPE" value="through hole" x="58.42" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="942-IRLB8721PBF" x="58.42" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="IRLB8721PbF" x="58.42" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="61.3" y="96.437" size="1" layer="25" rot="R270"/>
-<attribute name="NUM_PINS" value="3" x="58.42" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="PACKAGE" value="TO220AB-3" x="58.42" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="PREFIX" value="Q" x="58.42" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="ROHS" value="yes" x="58.42" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="SYMBOL_0_0" value="N-Channel Enhanced MOSFET" x="58.42" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="TEMPERATURE_RANGE_HIGH" value="+175°C" x="58.42" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="TEMPERATURE_RANGE_LOW" value="-55°C" x="58.42" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="TYPE" value="transistor" x="58.42" y="91.44" size="1.778" layer="27" display="off"/>
+<element name="Q1" library="Infineon - IRLB8721PbF" package="INFINEON_IRLB8721PBF_0" value="INFINEON_IRLB8721PBFINFINEON_IRLB8721PBF_0_0" x="41.91" y="92.71" smashed="yes">
+<attribute name="CENTROID_NOT_SPECIFIED" value="No" x="41.91" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="https://upverter.com/datasheet/6023de1dc29e00ae136963535d37ebb95ee78d8c.pdf" x="41.91" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_DESCRIPTION" value="TRANS MOSFET N-CH 30V 62A TO-220AB" x="41.91" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="IRLB8721PBF-ND" x="41.91" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORTED_FROM" value="octopart" x="41.91" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="IPC_LAND_PATTERN_NAME" value="TO-220" x="41.91" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="LEAD_FREE" value="yes" x="41.91" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Infineon" x="41.91" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING_TYPE" value="through hole" x="41.91" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="942-IRLB8721PBF" x="41.91" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="IRLB8721PbF" x="41.91" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="44.79" y="97.707" size="1" layer="25" rot="R270"/>
+<attribute name="NUM_PINS" value="3" x="41.91" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE" value="TO220AB-3" x="41.91" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="PREFIX" value="Q" x="41.91" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="ROHS" value="yes" x="41.91" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="SYMBOL_0_0" value="N-Channel Enhanced MOSFET" x="41.91" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="TEMPERATURE_RANGE_HIGH" value="+175°C" x="41.91" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="TEMPERATURE_RANGE_LOW" value="-55°C" x="41.91" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="TYPE" value="transistor" x="41.91" y="92.71" size="1.778" layer="27" display="off"/>
 </element>
-<element name="Q2" library="Infineon - IRLB8721PbF" package="INFINEON_IRLB8721PBF_0" value="INFINEON_IRLB8721PBFINFINEON_IRLB8721PBF_0_0" x="41.91" y="91.44" smashed="yes">
-<attribute name="CENTROID_NOT_SPECIFIED" value="No" x="41.91" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET" value="https://upverter.com/datasheet/6023de1dc29e00ae136963535d37ebb95ee78d8c.pdf" x="41.91" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_DESCRIPTION" value="TRANS MOSFET N-CH 30V 62A TO-220AB" x="41.91" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="IRLB8721PBF-ND" x="41.91" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="IMPORTED_FROM" value="octopart" x="41.91" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="IPC_LAND_PATTERN_NAME" value="TO-220" x="41.91" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="LEAD_FREE" value="yes" x="41.91" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="Infineon" x="41.91" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="MOUNTING_TYPE" value="through hole" x="41.91" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="942-IRLB8721PBF" x="41.91" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="IRLB8721PbF" x="41.91" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="44.79" y="96.437" size="1" layer="25" rot="R270"/>
-<attribute name="NUM_PINS" value="3" x="41.91" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="PACKAGE" value="TO220AB-3" x="41.91" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="PREFIX" value="Q" x="41.91" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="ROHS" value="yes" x="41.91" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="SYMBOL_0_0" value="N-Channel Enhanced MOSFET" x="41.91" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="TEMPERATURE_RANGE_HIGH" value="+175°C" x="41.91" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="TEMPERATURE_RANGE_LOW" value="-55°C" x="41.91" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="TYPE" value="transistor" x="41.91" y="91.44" size="1.778" layer="27" display="off"/>
+<element name="Q2" library="Infineon - IRLB8721PbF" package="INFINEON_IRLB8721PBF_0" value="INFINEON_IRLB8721PBFINFINEON_IRLB8721PBF_0_0" x="24.13" y="92.71" smashed="yes">
+<attribute name="CENTROID_NOT_SPECIFIED" value="No" x="24.13" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="https://upverter.com/datasheet/6023de1dc29e00ae136963535d37ebb95ee78d8c.pdf" x="24.13" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_DESCRIPTION" value="TRANS MOSFET N-CH 30V 62A TO-220AB" x="24.13" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="IRLB8721PBF-ND" x="24.13" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORTED_FROM" value="octopart" x="24.13" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="IPC_LAND_PATTERN_NAME" value="TO-220" x="24.13" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="LEAD_FREE" value="yes" x="24.13" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Infineon" x="24.13" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING_TYPE" value="through hole" x="24.13" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="942-IRLB8721PBF" x="24.13" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="IRLB8721PbF" x="24.13" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="27.01" y="97.707" size="1" layer="25" rot="R270"/>
+<attribute name="NUM_PINS" value="3" x="24.13" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE" value="TO220AB-3" x="24.13" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="PREFIX" value="Q" x="24.13" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="ROHS" value="yes" x="24.13" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="SYMBOL_0_0" value="N-Channel Enhanced MOSFET" x="24.13" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="TEMPERATURE_RANGE_HIGH" value="+175°C" x="24.13" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="TEMPERATURE_RANGE_LOW" value="-55°C" x="24.13" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="TYPE" value="transistor" x="24.13" y="92.71" size="1.778" layer="27" display="off"/>
 </element>
-<element name="Q3" library="Infineon - IRLB8721PbF" package="INFINEON_IRLB8721PBF_0" value="INFINEON_IRLB8721PBFINFINEON_IRLB8721PBF_0_0" x="24.13" y="91.44" smashed="yes">
-<attribute name="CENTROID_NOT_SPECIFIED" value="No" x="24.13" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET" value="https://upverter.com/datasheet/6023de1dc29e00ae136963535d37ebb95ee78d8c.pdf" x="24.13" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_DESCRIPTION" value="TRANS MOSFET N-CH 30V 62A TO-220AB" x="24.13" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="IRLB8721PBF-ND" x="24.13" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="IMPORTED_FROM" value="octopart" x="24.13" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="IPC_LAND_PATTERN_NAME" value="TO-220" x="24.13" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="LEAD_FREE" value="yes" x="24.13" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="Infineon" x="24.13" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="MOUNTING_TYPE" value="through hole" x="24.13" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="942-IRLB8721PBF" x="24.13" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="IRLB8721PbF" x="24.13" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="27.01" y="96.437" size="1" layer="25" rot="R270"/>
-<attribute name="NUM_PINS" value="3" x="24.13" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="PACKAGE" value="TO220AB-3" x="24.13" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="PREFIX" value="Q" x="24.13" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="ROHS" value="yes" x="24.13" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="SYMBOL_0_0" value="N-Channel Enhanced MOSFET" x="24.13" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="TEMPERATURE_RANGE_HIGH" value="+175°C" x="24.13" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="TEMPERATURE_RANGE_LOW" value="-55°C" x="24.13" y="91.44" size="1.778" layer="27" display="off"/>
-<attribute name="TYPE" value="transistor" x="24.13" y="91.44" size="1.778" layer="27" display="off"/>
+<element name="Q3" library="Infineon - IRLB8721PbF" package="INFINEON_IRLB8721PBF_0" value="INFINEON_IRLB8721PBFINFINEON_IRLB8721PBF_0_0" x="59.69" y="92.71" smashed="yes">
+<attribute name="CENTROID_NOT_SPECIFIED" value="No" x="59.69" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="https://upverter.com/datasheet/6023de1dc29e00ae136963535d37ebb95ee78d8c.pdf" x="59.69" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_DESCRIPTION" value="TRANS MOSFET N-CH 30V 62A TO-220AB" x="59.69" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="IRLB8721PBF-ND" x="59.69" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORTED_FROM" value="octopart" x="59.69" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="IPC_LAND_PATTERN_NAME" value="TO-220" x="59.69" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="LEAD_FREE" value="yes" x="59.69" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Infineon" x="59.69" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING_TYPE" value="through hole" x="59.69" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="942-IRLB8721PBF" x="59.69" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="IRLB8721PbF" x="59.69" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="62.57" y="97.707" size="1" layer="25" rot="R270"/>
+<attribute name="NUM_PINS" value="3" x="59.69" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE" value="TO220AB-3" x="59.69" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="PREFIX" value="Q" x="59.69" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="ROHS" value="yes" x="59.69" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="SYMBOL_0_0" value="N-Channel Enhanced MOSFET" x="59.69" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="TEMPERATURE_RANGE_HIGH" value="+175°C" x="59.69" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="TEMPERATURE_RANGE_LOW" value="-55°C" x="59.69" y="92.71" size="1.778" layer="27" display="off"/>
+<attribute name="TYPE" value="transistor" x="59.69" y="92.71" size="1.778" layer="27" display="off"/>
+</element>
+<element name="X1" library="degson" package="DG350-3.5-03P" value="DG3XX-03-3.5" x="5.08" y="93.98" smashed="yes" rot="R90">
+<attribute name="NAME" x="1.27" y="90.17" size="1.016" layer="25" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="8.89" y="88.265" size="1.016" layer="27" ratio="18" rot="R180"/>
+</element>
+<element name="X2" library="degson" package="DG350-3.5-03P" value="DG3XX-03-3.5" x="5.08" y="80.01" smashed="yes" rot="R90">
+<attribute name="NAME" x="1.27" y="76.2" size="1.016" layer="25" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="8.89" y="74.295" size="1.016" layer="27" ratio="18" rot="R180"/>
+</element>
+<element name="X3" library="degson" package="DG350-3.5-03P" value="DG3XX-03-3.5" x="5.08" y="66.04" smashed="yes" rot="R90">
+<attribute name="NAME" x="1.27" y="62.23" size="1.016" layer="25" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="8.89" y="60.325" size="1.016" layer="27" ratio="18" rot="R180"/>
+</element>
+<element name="X4" library="degson" package="DG350-3.5-03P" value="DG3XX-03-3.5" x="5.08" y="52.07" smashed="yes" rot="R90">
+<attribute name="NAME" x="1.27" y="48.26" size="1.016" layer="25" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="8.89" y="46.355" size="1.016" layer="27" ratio="18" rot="R180"/>
 </element>
 </elements>
 <signals>
 <signal name="P-LED">
-<contactref element="J1" pad="PWR"/>
 <contactref element="ARDUINO_NANO1" pad="15"/>
-<wire x1="15.0876" y1="48.3108" x2="14.97" y2="48.26" width="0.1524" layer="1"/>
-<wire x1="14.9352" y1="48.3108" x2="14.97" y2="48.26" width="0.1524" layer="1"/>
-<contactref element="J2" pad="P1"/>
-<wire x1="15.0876" y1="48.3108" x2="59.69" y2="52.07" width="0" layer="19" extent="1-1"/>
-<wire x1="6.35" y1="92.71" x2="14.9352" y2="48.3108" width="0" layer="19" extent="1-1"/>
+<contactref element="X2" pad="1"/>
+<contactref element="X3" pad="3"/>
+<wire x1="5.08" y1="76.51" x2="5.08" y2="69.54" width="0.1524" layer="16"/>
+<wire x1="5.08" y1="69.54" x2="11.74" y2="69.54" width="0.1524" layer="16"/>
+<wire x1="25.4" y1="55.88" x2="57.15" y2="55.88" width="0.1524" layer="16"/>
+<wire x1="57.15" y1="55.88" x2="59.69" y2="53.34" width="0.1524" layer="16"/>
+<wire x1="59.69" y1="53.34" x2="59.69" y2="52.07" width="0.1524" layer="16"/>
+<wire x1="11.74" y1="69.54" x2="25.4" y2="55.88" width="0.1524" layer="16"/>
 </signal>
 <signal name="R-LED">
-<contactref element="J3" pad="P2"/>
 <contactref element="Q1" pad="2"/>
-<wire x1="58.042" y1="91.44" x2="3.81" y2="82.55" width="0" layer="19" extent="1-1"/>
+<contactref element="X1" pad="1"/>
+<wire x1="5.08" y1="90.48" x2="22.2891375" y2="90.48" width="0.1524" layer="16"/>
+<wire x1="22.2891375" y1="90.48" x2="23.2327375" y2="91.4236" width="0.1524" layer="16"/>
+<wire x1="40.2456" y1="91.4236" x2="41.532" y2="92.71" width="0.1524" layer="16"/>
+<wire x1="23.2327375" y1="91.4236" x2="40.2456" y2="91.4236" width="0.1524" layer="16"/>
 </signal>
 <signal name="R-GATE">
 <contactref element="Q1" pad="1"/>
 <contactref element="ARDUINO_NANO1" pad="23"/>
-<wire x1="58.042" y1="93.98" x2="41.91" y2="67.31" width="0" layer="19" extent="1-1"/>
+<wire x1="41.532" y1="95.25" x2="44.45" y2="95.25" width="0.1524" layer="1"/>
+<wire x1="44.45" y1="95.25" x2="49.53" y2="90.17" width="0.1524" layer="1"/>
+<wire x1="49.53" y1="90.17" x2="49.53" y2="74.93" width="0.1524" layer="1"/>
+<wire x1="49.53" y1="74.93" x2="41.91" y2="67.31" width="0.1524" layer="1"/>
 </signal>
 <signal name="G-GATE">
 <contactref element="ARDUINO_NANO1" pad="24"/>
 <contactref element="Q2" pad="1"/>
-<wire x1="41.532" y1="93.98" x2="39.37" y2="67.31" width="0" layer="19" extent="1-1"/>
+<wire x1="23.752" y1="95.25" x2="26.67" y2="95.25" width="0.1524" layer="1"/>
+<wire x1="39.37" y1="82.55" x2="39.37" y2="67.31" width="0.1524" layer="1"/>
+<wire x1="26.67" y1="95.25" x2="39.37" y2="82.55" width="0.1524" layer="1"/>
 </signal>
 <signal name="B-GATE">
 <contactref element="Q3" pad="1"/>
 <contactref element="ARDUINO_NANO1" pad="21"/>
-<wire x1="23.752" y1="93.98" x2="46.99" y2="67.31" width="0" layer="19" extent="1-1"/>
+<wire x1="59.312" y1="95.25" x2="53.34" y2="89.278" width="0.1524" layer="1"/>
+<wire x1="53.34" y1="73.66" x2="46.99" y2="67.31" width="0.1524" layer="1"/>
+<wire x1="53.34" y1="89.278" x2="53.34" y2="73.66" width="0.1524" layer="1"/>
 </signal>
 <signal name="G-LED">
-<contactref element="J3" pad="P1"/>
 <contactref element="Q2" pad="2"/>
-<wire x1="41.532" y1="91.44" x2="6.35" y2="82.55" width="0" layer="19" extent="1-1"/>
+<contactref element="X1" pad="2"/>
+<wire x1="5.08" y1="93.98" x2="15.24" y2="93.98" width="0.1524" layer="1"/>
+<wire x1="15.24" y1="93.98" x2="16.51" y2="92.71" width="0.1524" layer="1"/>
+<wire x1="16.51" y1="92.71" x2="23.752" y2="92.71" width="0.1524" layer="1"/>
 </signal>
 <signal name="B-LED">
-<contactref element="J2" pad="P2"/>
 <contactref element="Q3" pad="2"/>
-<wire x1="23.752" y1="91.44" x2="3.81" y2="92.71" width="0" layer="19" extent="1-1"/>
+<contactref element="X1" pad="3"/>
+<wire x1="59.312" y1="92.71" x2="53.1142" y2="98.9078" width="0.1524" layer="16"/>
+<wire x1="6.1978" y1="98.9078" x2="5.08" y2="97.79" width="0.1524" layer="16"/>
+<wire x1="53.1142" y1="98.9078" x2="6.1978" y2="98.9078" width="0.1524" layer="16"/>
+<wire x1="5.08" y1="97.79" x2="5.08" y2="97.48" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="GND">
 <contactref element="ARDUINO_NANO1" pad="19"/>
 <contactref element="ARDUINO_NANO1" pad="14"/>
-<contactref element="J1" pad="GNDBREAK"/>
-<wire x1="12.0396" y1="43.5864" x2="11.97" y2="43.56" width="0.1524" layer="16"/>
 <contactref element="Q1" pad="3"/>
 <contactref element="Q2" pad="3"/>
 <contactref element="Q3" pad="3"/>
+<contactref element="X4" pad="1"/>
+<contactref element="X4" pad="2"/>
+<wire x1="41.532" y1="90.17" x2="52.07" y2="79.632" width="0.1524" layer="16"/>
+<wire x1="52.07" y1="79.632" x2="52.07" y2="78.74" width="0.1524" layer="16"/>
+<wire x1="52.07" y1="78.74" x2="52.07" y2="67.31" width="0.1524" layer="16"/>
+<wire x1="23.752" y1="90.17" x2="35.182" y2="78.74" width="0.1524" layer="16"/>
+<wire x1="35.182" y1="78.74" x2="52.07" y2="78.74" width="0.1524" layer="16"/>
+<wire x1="59.312" y1="90.17" x2="59.312" y2="85.982" width="0.1524" layer="16"/>
+<wire x1="59.312" y1="85.982" x2="52.07" y2="78.74" width="0.1524" layer="16"/>
+<wire x1="5.08" y1="52.07" x2="12.7" y2="52.07" width="0.1524" layer="1"/>
+<wire x1="12.7" y1="52.07" x2="16.2" y2="48.57" width="0.1524" layer="1"/>
+<wire x1="16.2" y1="48.57" x2="17.78" y2="46.99" width="0.1524" layer="1"/>
+<wire x1="5.08" y1="48.57" x2="16.2" y2="48.57" width="0.1524" layer="1"/>
+<wire x1="17.78" y1="46.99" x2="52.07" y2="46.99" width="0.1524" layer="1"/>
+<wire x1="52.07" y1="46.99" x2="57.15" y2="52.07" width="0.1524" layer="1"/>
 <wire x1="57.15" y1="52.07" x2="52.07" y2="67.31" width="0" layer="19" extent="1-1"/>
-<wire x1="12.0396" y1="43.5864" x2="57.15" y2="52.07" width="0" layer="19" extent="16-16"/>
-<wire x1="58.042" y1="88.9" x2="11.97" y2="43.56" width="0" layer="19" extent="1-1"/>
-<wire x1="41.532" y1="88.9" x2="58.042" y2="88.9" width="0" layer="19" extent="1-1"/>
-<wire x1="23.752" y1="88.9" x2="41.532" y2="88.9" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TRIG-SENSE">
-<contactref element="J4" pad="P2"/>
 <contactref element="ARDUINO_NANO1" pad="30"/>
-<wire x1="3.81" y1="72.39" x2="24.13" y2="67.31" width="0" layer="19" extent="1-1"/>
+<contactref element="X2" pad="2"/>
+<wire x1="24.13" y1="67.31" x2="23.5712" y2="67.8688" width="0.1524" layer="16"/>
+<wire x1="23.5712" y1="67.8688" x2="23.5712" y2="68.13064375" width="0.1524" layer="16"/>
+<wire x1="23.5712" y1="68.13064375" x2="11.69184375" y2="80.01" width="0.1524" layer="16"/>
+<wire x1="11.69184375" y1="80.01" x2="5.08" y2="80.01" width="0.1524" layer="16"/>
 </signal>
 <signal name="ECHO-SENSE">
-<contactref element="J4" pad="P1"/>
 <contactref element="ARDUINO_NANO1" pad="29"/>
-<wire x1="6.35" y1="72.39" x2="26.67" y2="67.31" width="0" layer="19" extent="1-1"/>
+<contactref element="X2" pad="3"/>
+<wire x1="26.67" y1="67.31" x2="10.47" y2="83.51" width="0.1524" layer="16"/>
+<wire x1="10.47" y1="83.51" x2="5.08" y2="83.51" width="0.1524" layer="16"/>
 </signal>
 <signal name="P-SENSE">
-<contactref element="J5" pad="P2"/>
 <contactref element="ARDUINO_NANO1" pad="12"/>
-<wire x1="3.81" y1="62.23" x2="52.07" y2="52.07" width="0" layer="19" extent="1-1"/>
+<contactref element="X3" pad="1"/>
+<wire x1="52.07" y1="52.07" x2="49.53" y2="49.53" width="0.1524" layer="1"/>
+<wire x1="18.09" y1="49.53" x2="5.08" y2="62.54" width="0.1524" layer="1"/>
+<wire x1="49.53" y1="49.53" x2="18.09" y2="49.53" width="0.1524" layer="1"/>
 </signal>
 <signal name="GND-SENSE">
-<contactref element="J5" pad="P1"/>
+<contactref element="X3" pad="2"/>
+</signal>
+<signal name="BTN-IN">
+<contactref element="X4" pad="3"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
