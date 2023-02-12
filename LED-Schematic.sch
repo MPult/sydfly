@@ -839,6 +839,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-1.016" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="12V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
+<symbol name="3.3V">
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="-1.016" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="3.3V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" prefix="GND">
@@ -870,6 +876,19 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <deviceset name="12V" prefix="SUPPLY">
 <gates>
 <gate name="G$1" symbol="12V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="3.3V" prefix="SUPPLY">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="3.3V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -955,7 +974,6 @@ DIN A4, landscape with extra doc field</description>
 <part name="X2" library="degson" deviceset="DG3XX-03" device="-3.5"/>
 <part name="X3" library="degson" deviceset="DG3XX-03" device="-3.5"/>
 <part name="X4" library="degson" deviceset="DG3XX-03" device="-3.5"/>
-<part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -968,6 +986,8 @@ DIN A4, landscape with extra doc field</description>
 <part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="12V" device=""/>
 <part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="12V" device=""/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="DINA4_L" device=""/>
+<part name="SUPPLY6" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="SUPPLY7" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -976,6 +996,9 @@ DIN A4, landscape with extra doc field</description>
 <text x="-33.02" y="33.02" size="1.778" layer="91">Mode change btn</text>
 <text x="-15.24" y="55.88" size="1.778" layer="91" rot="R90">SENSOR</text>
 <text x="-15.24" y="78.74" size="1.778" layer="91" rot="R90">LED OUT</text>
+<text x="182.88" y="22.86" size="2.54" layer="97">BTN-IN Is a jumper
++3.3v: Strobe
+GND: Constant</text>
 </plain>
 <instances>
 <instance part="ARDUINO_NANO1" gate="G$1" x="73.66" y="81.28" smashed="yes">
@@ -1021,9 +1044,6 @@ DIN A4, landscape with extra doc field</description>
 <instance part="X4" gate="-3" x="-5.08" y="30.48" smashed="yes" rot="MR0">
 <attribute name="NAME" x="-8.128" y="29.591" size="1.778" layer="95" rot="MR0"/>
 </instance>
-<instance part="GND1" gate="1" x="7.62" y="35.56" smashed="yes" rot="R90">
-<attribute name="VALUE" x="10.16" y="35.56" size="1.778" layer="96"/>
-</instance>
 <instance part="GND2" gate="1" x="7.62" y="40.64" smashed="yes" rot="R90">
 <attribute name="VALUE" x="10.16" y="40.64" size="1.778" layer="96"/>
 </instance>
@@ -1062,6 +1082,12 @@ DIN A4, landscape with extra doc field</description>
 <attribute name="LAST_DATE_TIME" x="124.46" y="-13.97" size="2.54" layer="94"/>
 <attribute name="SHEET" x="198.12" y="-13.97" size="2.54" layer="94"/>
 <attribute name="DRAWING_NAME" x="129.54" y="3.81" size="2.54" layer="94"/>
+</instance>
+<instance part="SUPPLY6" gate="G$1" x="106.68" y="71.12" smashed="yes" rot="R270">
+<attribute name="VALUE" x="110.236" y="72.136" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="SUPPLY7" gate="G$1" x="5.08" y="35.56" smashed="yes" rot="R270">
+<attribute name="VALUE" x="8.636" y="36.576" size="1.778" layer="96" rot="R270"/>
 </instance>
 </instances>
 <busses>
@@ -1104,11 +1130,6 @@ DIN A4, landscape with extra doc field</description>
 <pinref part="X4" gate="-1" pin="KL"/>
 <wire x1="-2.54" y1="40.64" x2="5.08" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="X4" gate="-2" pin="KL"/>
-<wire x1="-2.54" y1="35.56" x2="5.08" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="GND1" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="X3" gate="-2" pin="KL"/>
@@ -1259,6 +1280,18 @@ DIN A4, landscape with extra doc field</description>
 <pinref part="X2" gate="-1" pin="KL"/>
 <wire x1="-2.54" y1="76.2" x2="5.08" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="SUPPLY5" gate="G$1" pin="12V"/>
+</segment>
+</net>
+<net name="3.3V" class="0">
+<segment>
+<pinref part="X4" gate="-2" pin="KL"/>
+<wire x1="-2.54" y1="35.56" x2="5.08" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="SUPPLY7" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="ARDUINO_NANO1" gate="G$1" pin="3V3"/>
+<pinref part="SUPPLY6" gate="G$1" pin="3.3V"/>
+<wire x1="93.98" y1="71.12" x2="106.68" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

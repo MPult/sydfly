@@ -9,9 +9,9 @@
 #define trigPin 12//MEGA 13
 #define echoPin 11//MEGA 12
 
-#define FADESPEED 3       // make this higher to slow down
+#define FADESPEED 4     // make this higher to slow down
 #define distThreshold 20  // How high distance needs to be before starting LED
-#define mode 1 // 1: rgb fade, 2: const yellow
+//#define mode 1 // 1: rgb fade, 2: const yellow
 
 void setup() {
   Serial.begin(9600);
@@ -21,6 +21,7 @@ void setup() {
 
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
+  pinMode(8, INPUT);
 }
 
 void loop() {
@@ -36,13 +37,14 @@ void loop() {
 
   Serial.print(distance);
   Serial.println(" cm");
-
   if (distance > distThreshold) {
     // LEDS need to be on, check what mode to be run
-    if(mode == 1) {
+    bool strobe = digitalRead(8);
+    Serial.println(strobe);
+    if(strobe == true) {
     RGB(); 
     }
-    if (mode == 2) {
+    if (strobe == false) {
       yellow();
     }
   } else {
@@ -50,7 +52,7 @@ void loop() {
     analogWrite(BLUEPIN, 0);
     analogWrite(GREENPIN, 0);
   }
-  delay(500);
+  delay(300);
 }
 
 void yellow() {
@@ -67,7 +69,6 @@ void RGB() {
   Serial.print(",");
   Serial.println(b);
   // fade from blue to violet
-    // fade from blue to violet
   for (r = 0; r < 256; r++) { 
     analogWrite(REDPIN, r);
     delay(FADESPEED);
@@ -89,7 +90,7 @@ void RGB() {
   } 
   // fade from green to teal
   for (b = 0; b < 256; b++) { 
-    analogWrite(BLUEPIN, b);
+    analogWrite(BLUEPIN, b); 
     delay(FADESPEED);
   } 
   // fade from teal to blue
