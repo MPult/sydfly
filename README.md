@@ -11,7 +11,8 @@
   </a>
 
   <h3 align="center">Sydfly</h3>
-
+  <h4>This is still under Developent</h4> 
+  <h4> /syːd/ /flyːr/ </h4>
   <p align="center">
      LEDs for your PAX wardrobe, without the propriatary controller
     <!--<br />
