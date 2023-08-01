@@ -64,6 +64,7 @@ Below is a list of parts required, each have their datasheet in the ``Datasheets
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+![Breadboard Image](./docs/Breadboard.JPG)
 
 ### PCB Route
 
@@ -82,19 +83,11 @@ For the Docs well assume you use [jlcpcb.com](https://jlcpcb.com)
 1. 3D-Print the case from the ``CAD`` folder
 2. Add a 45° diffuser for the stylish look
 
+![PC IMAGE](./docs/PCB.JPG)
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-<!-- USAGE EXAMPLES -->
-<!-- ## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
- -->
 
 
 <!-- ROADMAP -->
@@ -103,7 +96,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [x] New README
 - [x] Create Release
 - [ ] Add multithreading
-- [ ] Add images to docs.
+- [x] Add images to docs.
 
 See the [open issues](https://github.com/mpult/sydfly/issues) for a full list of proposed features (and known issues).
 
