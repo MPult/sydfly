@@ -1,9 +1,8 @@
 <a name="readme-top"></a>
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-
+![Contributors](https://img.shields.io/github/contributors/mpult/sydfly.svg?style=for-the-badge)
+![Forks](https://img.shields.io/github/forks/mpult/sydfly.svg?style=for-the-badge)
+![Issues](https://img.shields.io/github/issues/mpult/sydfly.svg?style=for-the-badge)
+![Licence]( https://github.com/mpult/sydfly/blob/main/LICENSE)
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -165,17 +164,8 @@ In the interest of full transparency, I did receive these SYDFLY PCB prototypes 
 
 If you're working on an open-source PCB project like SYDFLY, I highly recommend giving PCBWay a try. Their commitment to quality, fast and affordable shipping, and range of finish options make them a strong contender in the PCB manufacturing space.
 
-</detials>
+</details>
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/mpult/sydfly.svg?style=for-the-badge
-[contributors-url]: https://github.com/mpult/sydfly/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/mpult/sydfly.svg?style=for-the-badge
-[forks-url]: https://github.com/mpult/sydfly/network/members
-[stars-shield]: https://img.shields.io/github/stars/mpult/sydfly.svg?style=for-the-badge
-[stars-url]: https://github.com/mpult/sydfly/stargazers
-[issues-shield]: https://img.shields.io/github/issues/mpult/sydfly.svg?style=for-the-badge
-[issues-url]: https://github.com/mpult/sydfly/issues
-[license-shield]: https://img.shields.io/github/license/mpult/sydfly.svg?style=for-the-badge
-[license-url]: https://github.com/mpult/sydfly/blob/main/LICENSE
+
 [product-screenshot]: images/screenshot.png
