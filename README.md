@@ -132,16 +132,40 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
 * [Choose an Open Source License](https://choosealicense.com)
 * [Img Shields](https://shields.io)
 * [Markdown Template](https://github.com/othneildrew/Best-README-Template)
+* [PCBway](https://pcbway.com)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+# PCBway Review.
 
+PCBway is the sponsor for this project!
 
+**Disclaimer: I received the SYDFLY PCB prototype from PCBWay for free in exchange for writing this review.**
+<details>
+<summary>Read the Review</summary>
+When it comes to open-source PCB projects, the quality of the prototypes can make a significant difference in the overall success of your project. I recently had the opportunity to try out PCBWay's services for the SYDFLY project, and I must say I'm quite impressed with the experience.
 
+Packaging:
+First impressions matter, and PCBWay started off on the right foot with their packaging. The PCBs were carefully wrapped in bubble wrap and vacuum-sealed, ensuring that they arrived in pristine condition. This level of care in packaging demonstrates a commitment to quality and customer satisfaction.
+
+Quality Assurance:
+Upon opening the package, I examined the PCBs closely for defects. I'm pleased to report that there were none to be found. The boards looked immaculate, and the solder mask and silkscreen printing were sharp and well-executed. I also conducted a thorough conductivity and shorts check, and everything passed with flying colors. This attention to detail and quality control is crucial.
+
+Finish Selection:
+One important piece of advice I'd like to share is the importance of choosing the right finish for your PCBs. PCBWay offers a variety of finish options, and it's essential to select the one that suits your project. In my experience, the lead-free finish worked perfectly. However, it's worth noting that if you're not familiar with different finishes, seeking guidance is advisable to ensure compatibility with your components.
+
+Shipping Speed and Cost:
+I was pleasantly surprised by the efficiency of PCBWay's shipping service. Not only was it faster, but it was also more cost-effective compared to my previous experience with another PCB manufacturer. This is a significant advantage for anyone looking to get their prototypes quickly without breaking the bank.
+
+Overall Impressions:
+In conclusion, my experience with PCBWay for the SYDFLY project has been overwhelmingly positive. The quality of the PCBs, the attention to detail, and the reliable shipping service all contribute to an excellent overall experience. It's worth noting that the quality is on par with some of the more well-known PCB manufacturers like JLCPCB, which speaks volumes about PCBWay's capabilities.
+
+In the interest of full transparency, I did receive these SYDFLY PCB prototypes from PCBWay at no cost in exchange for this review. However, I want to emphasize that my assessment is based solely on the quality of the product and the overall experience.
+
+If you're working on an open-source PCB project like SYDFLY, I highly recommend giving PCBWay a try. Their commitment to quality, fast and affordable shipping, and range of finish options make them a strong contender in the PCB manufacturing space.
+
+</detials>
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/mpult/sydfly.svg?style=for-the-badge
