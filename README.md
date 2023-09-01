@@ -2,7 +2,7 @@
 ![Contributors](https://img.shields.io/github/contributors/mpult/sydfly.svg?style=for-the-badge)
 ![Forks](https://img.shields.io/github/forks/mpult/sydfly.svg?style=for-the-badge)
 ![Issues](https://img.shields.io/github/issues/mpult/sydfly.svg?style=for-the-badge)
-![Licence]( https://github.com/mpult/sydfly/blob/main/LICENSE)
+![Licence](https://github.com/mpult/sydfly/blob/main/LICENSE)
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
