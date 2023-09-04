@@ -70,7 +70,7 @@ Below is a list of parts required, each have their datasheet in the ``Datasheets
 Okay so you're hardcore and want to make your own PCB.
 
 You can either use the Gerber files from the release, or make your own. Instructions to make the gerber files will follow soon™
-For the Docs well assume you use [jlcpcb.com](https://jlcpcb.com)
+
 1. Upload the **zipped** Gerber files from the release.
 2. Select the options you want, only really important is 2 layered PCB. Rest is all preference
 3. Order and wait.
@@ -158,7 +158,7 @@ Shipping Speed and Cost:
 I was pleasantly surprised by the efficiency of PCBWay's shipping service. Not only was it faster, but it was also more cost-effective compared to my previous experience with another PCB manufacturer. This is a significant advantage for anyone looking to get their prototypes quickly without breaking the bank.
 
 Overall Impressions:
-In conclusion, my experience with PCBWay for the SYDFLY project has been overwhelmingly positive. The quality of the PCBs, the attention to detail, and the reliable shipping service all contribute to an excellent overall experience. It's worth noting that the quality is on par with some of the more well-known PCB manufacturers like JLCPCB, which speaks volumes about PCBWay's capabilities.
+In conclusion, my experience with PCBWay for the SYDFLY project has been overwhelmingly positive. The quality of the PCBs, the attention to detail, and the reliable shipping service all contribute to an excellent overall experience. It's worth noting that the quality is on par with some of other well-known PCB manufacturers, which speaks volumes about PCBWay's capabilities.
 
 In the interest of full transparency, I did receive these SYDFLY PCB prototypes from PCBWay at no cost in exchange for this review. However, I want to emphasize that my assessment is based solely on the quality of the product and the overall experience.
 
