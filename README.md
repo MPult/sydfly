@@ -141,9 +141,10 @@ Distributed under the MIT License. See `LICENSE` for more information.
 PCBway is the sponsor for this project!
 
 **Disclaimer: I received the SYDFLY PCB prototype from PCBWay for free in exchange for writing this review.**
-<details>
-<summary>Read the Review</summary>
+
 When it comes to open-source PCB projects, the quality of the prototypes can make a significant difference in the overall success of your project. I recently had the opportunity to try out PCBWay's services for the SYDFLY project, and I must say I'm quite impressed with the experience.
+
+The continued collaboration with PCBWay has made the delevopment of this project possible. The service is honestly incredible, over multiple orders with them the quality has remained excelent. A coupple weeks after a order arrives a representative will reach out and ensure that everything is perfect.
 
 Packaging:
 First impressions matter, and PCBWay started off on the right foot with their packaging. The PCBs were carefully wrapped in bubble wrap and vacuum-sealed, ensuring that they arrived in pristine condition. This level of care in packaging demonstrates a commitment to quality and customer satisfaction.
@@ -164,7 +165,6 @@ In the interest of full transparency, I did receive these SYDFLY PCB prototypes 
 
 If you're working on an open-source PCB project like SYDFLY, I highly recommend giving PCBWay a try. Their commitment to quality, fast and affordable shipping, and range of finish options make them a strong contender in the PCB manufacturing space.
 
-</details>
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
